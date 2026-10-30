@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+    padding: 20px 20px 20px 40px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Селектори ID */
+#main-title {
+    color: #003366;
+}
+
+#block-id {
+    background: #e6e6e6;
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+.note {
+    color: #006600;
+    font-style: italic;
+}
+
+/* Навігація */
+.menu {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    float: left;
+    margin-right: 8px;
+}
+
+.menu a {
+    display: block;
+    padding: 6px 12px;
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #bbb;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Позиціонування */
+.box {
+    position: relative;
+    height: 80px;
+    padding: 12px;
+    border: 1px solid #666;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 2px 8px;
+    background-color: #cc3333;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Обтікання */
+.float-block {
+    float: left;
+    width: 140px;
+    height: 90px;
+    margin: 0 15px 10px 0;
+    padding: 10px;
+    background-color: #cce0ff;
+    border: 1px solid #666;
+}
+
+/* Спойлери (accordion) */
+.spoiler {
+    margin-bottom: 6px;
+}
+
+.spoiler input {
+    display: none;
+}
+
+.spoiler label {
+    display: block;
+    padding: 8px 12px;
+    background-color: #eee;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.spoiler label:hover {
+    background-color: #ccc;
+}
+
+.spoiler-content {
+    display: none;
+    padding: 10px 12px;
+    border: 1px solid #999;
+    border-top: none;
+    background-color: #fff;
+}
+
+.spoiler input:checked + label {
+    background-color: #bbb;
+}
+
+.spoiler input:checked + label + .spoiler-content {
+    display: block;
+}

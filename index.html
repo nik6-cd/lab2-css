@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №2 — CSS</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        h2 {
+            color: #223366;
+            border-bottom: 1px solid #999;
+        }
+        .highlight {
+            background-color: #ffff99;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="main-title">Основи каскадних таблиць стилів (CSS)</h1>
+
+        <ul class="menu">
+            <li><a href="#about">Про CSS</a></li>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#float">Float</a></li>
+            <li><a href="#spoiler">Спойлер</a></li>
+        </ul>
+        <div class="clear"></div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Способи підключення CSS</h2>
+            <p>
+                У цьому абзаці є 
+                <span style="color: red; font-weight: bold;">інлайновий стиль</span>, 
+                а також <em>звичайний тег em</em>.
+            </p>
+            <p class="highlight">Це абзац зі стилем із тегу style (клас highlight).</p>
+            <p class="note">А це текст зі стилем із зовнішнього файлу (клас note).</p>
+            <div id="block-id">Блок з ID block-id (стилі беруться з style.css).</div>
+        </section>
+
+        <section id="position">
+            <h2>Властивість position</h2>
+            <div class="box">
+                Контейнер з position: relative.
+                <span class="badge">absolute</span>
+            </div>
+        </section>
+
+        <section id="float">
+            <h2>Властивість float</h2>
+            <div class="float-block">Блок float: left</div>
+            <p>
+                Текст обтікає плаваючий блок зліва. Якщо тексту багато, він плавно переходить 
+                під сам блок після заповнення вільного місця. Властивість float раніше активно 
+                використовувалася для верстки колонок, але зараз частіше застосовується для 
+                зображень у тексті.
+            </p>
+            <div class="clear"></div>
+        </section>
+
+        <section id="spoiler">
+            <h2>FAQ / Спойлери</h2>
+
+            <div class="spoiler">
+                <input type="checkbox" id="sp-1">
+                <label for="sp-1">Що таке CSS?</label>
+                <div class="spoiler-content">
+                    CSS — це мова стилів, яка відповідає за зовнішній вигляд та оформлення HTML-документа.
+                </div>
+            </div>
+
+            <div class="spoiler">
+                <input type="checkbox" id="sp-2">
+                <label for="sp-2">Навіщо потрібен float?</label>
+                <div class="spoiler-content">
+                    Float зміщує елемент вліво або вправо, дозволяючи текстовому вмісту обтікати його.
+                </div>
+            </div>
+
+            <div class="spoiler">
+                <input type="checkbox" id="sp-3">
+                <label for="sp-3">Fixed чи Absolute?</label>
+                <div class="spoiler-content">
+                    Fixed зафіксований відносно екрана браузера при прокрутці, а Absolute позиціонується відносно найближчого батьківського елемента.
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
